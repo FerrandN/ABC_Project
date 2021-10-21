@@ -1,0 +1,87 @@
+<?xml version=”1.0”?>
+
+<livre>
+
+    <auteur>
+    
+        <nom>Can</nom>
+
+        <prénom>Jerry</prénom>
+    
+    </auteur>
+
+    <auteur>
+    
+        <nom>Seller</nom>
+
+        <prénom>Jack</prénom>
+    
+    </auteur>
+
+    <sections>
+
+        <titre>Introduction</titre>
+
+        <chapitre>
+
+            <titre>Les bases</titre>
+
+            <paragraphe>
+
+                <texte></texte>
+
+            </paragraphe>
+
+        </chapitre>
+
+        <chapitre>
+
+            <titre></titre>
+
+            <paragraphe>
+
+                <texte></texte>
+
+            </paragraphe>
+
+        </chapitre>
+
+    </sections>
+
+    <sections>
+
+        <titre>
+
+        </titre>
+        
+        <chapitre>
+
+            <titre>
+
+            </titre>
+
+            <paragraphe>
+
+                <texte></texte>
+
+            </paragraphe>
+
+        </chapitre>
+
+        <chapitre>
+
+            <titre>
+
+            </titre>
+
+            <paragraphe>
+
+                <texte></texte>
+
+            </paragraphe>
+
+        </chapitre>
+
+    </sections>
+
+</livre>
