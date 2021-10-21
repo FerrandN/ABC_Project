@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<!DOCTYPE menu SYSTEM "DTD_Exo.dtd">
+
+<menu1>
+
+    <prix euro="30"></prix>
+
+    <entree1>
+        <nom></nom>
+        <description></description>
+    </entree1>
+
+    <entree2>
+        <nom></nom>
+        <description></description>
+    </entree2>
+
+    <entree3>
+        <nom></nom>
+        <description></description>
+    </entree3>
+
+    <plat1>
+        <nom></nom>
+        <description></description>
+    </plat1>
+
+    <plat2>
+        <nom></nom>
+        <description></description>
+    </plat2>
+
+    <plat3>
+        <nom></nom>
+        <description></description>
+    </plat3>
+
+    <dessert1>
+        <nom></nom>
+        <description></description>
+    </dessert1>
+
+    <dessert2>
+        <nom></nom>
+        <description></description>
+    </dessert2>
+
+    <dessert3>
+        <nom></nom>
+        <description></description>
+    </dessert3>
+
+    <fromage>
+        <nom></nom>
+        <description></description>
+    </fromage>
+
+</menu1>
+
+<menu2>
+
+    <prix euro="20"></prix>
+
+    <entree1>
+        <nom></nom>
+        <description></description>
+    </entree1>
+
+    <entree2>
+        <nom></nom>
+        <description></description>
+    </entree2>
+
+    <plat1>
+        <nom></nom>
+        <description></description>
+    </plat1>
+
+    <plat2>
+        <nom></nom>
+        <description></description>
+    </plat2>
+
+    <dessert1>
+        <nom></nom>
+        <description></description>
+    </dessert1>
+
+    <dessert2>
+        <nom></nom>
+        <description></description>
+    </dessert2>
+
+    <fromage>
+        <nom></nom>
+        <description></description>
+    </fromage>
+
+</menu2>
+
+<menu3>
+
+    <prix euro="15"></prix>
+
+    <entree1>
+        <nom></nom>
+        <description></description>
+    </entree1>
+
+    <plat1>
+        <nom></nom>
+        <description></description>
+    </plat1>
+
+    <dessert1>
+        <nom></nom>
+        <description></description>
+    </dessert1>
+
+</menu3>

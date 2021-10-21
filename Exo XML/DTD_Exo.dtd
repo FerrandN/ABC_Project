@@ -1,0 +1,8 @@
+<!DOCTYPE menu
+[
+<!ENTITY menu1 (prix,entree,plat,dessert)>
+<!ENTITY SYSTEM prix "30">
+<!ENTITY SYSTEM entree "salade">
+<!ENTITY SYSTEM plat "viande">
+<!ENTITY SYSTEM dessert "gatteau">
+]>
