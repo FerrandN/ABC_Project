@@ -1,0 +1,25 @@
+<?xml version=”1.0”?>
+
+<livre type="array">
+
+    <auteur type="array">
+
+        <nom></nom>
+        <prénom></prénom>
+
+    </auteur>
+
+    <section type="array">
+
+        <titre></titre>
+        
+        <chapitre type="array">
+
+            <titre></titre>
+            <paragraphe></paragraphe>
+
+        </chapitre>
+
+    </section>
+
+</livre>

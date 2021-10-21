@@ -1,22 +1,22 @@
-<?xml version=”1.0”?>
+<?xml version="1.0"?>
 
 <livre>
 
-    <auteur>
+    <auteur1>
     
         <nom>Can</nom>
 
-        <prénom>Jerry</prénom>
+        <prenom>Jerry</prenom>
     
-    </auteur>
+    </auteur1>
 
-    <auteur>
+    <auteur2>
     
         <nom>Seller</nom>
 
         <prénom>Jack</prénom>
     
-    </auteur>
+    </auteur2>
 
     <sections1>
 
