@@ -18,70 +18,94 @@
     
     </auteur>
 
-    <sections>
+    <sections1>
 
         <titre>Introduction</titre>
 
-        <chapitre>
+        <chapitre1>
 
             <titre>Les bases</titre>
 
-            <paragraphe>
+            <paragraphe1>
 
                 <texte></texte>
 
-            </paragraphe>
+            </paragraphe1>
 
-        </chapitre>
+            <paragraphe2>
 
-        <chapitre>
+                <texte></texte>
+
+            </paragraphe2>
+
+        </chapitre1>
+
+        <chapitre2>
+
+            <paragraphe1>
+
+                <texte></texte>
+
+            </paragraphe1>
 
             <titre></titre>
 
-            <paragraphe>
+            <paragraphe2>
 
                 <texte></texte>
 
-            </paragraphe>
+            </paragraphe2>
 
-        </chapitre>
+        </chapitre2>
 
-    </sections>
+    </sections1>
 
-    <sections>
+    <sections2>
 
         <titre>
 
         </titre>
         
-        <chapitre>
+        <chapitre1>
 
             <titre>
 
             </titre>
 
-            <paragraphe>
+            <paragraphe1>
 
                 <texte></texte>
 
-            </paragraphe>
+            </paragraphe1>
+            
+            <paragraphe2>
 
-        </chapitre>
+                <texte></texte>
 
-        <chapitre>
+            </paragraphe2>
+
+        </chapitre1>
+
+        <chapitre2>
 
             <titre>
 
             </titre>
 
-            <paragraphe>
+            <paragraphe1>
 
                 <texte></texte>
 
-            </paragraphe>
+            </paragraphe1>
+            
+            <paragraphe2>
 
-        </chapitre>
+                <texte></texte>
 
-    </sections>
+            </paragraphe2>
+
+        </chapitre2>
+
+    </sections2>
 
 </livre>
