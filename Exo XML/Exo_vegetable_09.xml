@@ -1,0 +1,11 @@
+<?xml version="1.0"?> 
+
+<vegetable1>
+    <price></price>
+    <name></name>
+    <harvest_date></harvest_date>
+    <link_to_recipe></link_to_recipe>
+    <vitamin></vitamin>
+    <number></number>
+    <weight></weight>
+</vegetable1>

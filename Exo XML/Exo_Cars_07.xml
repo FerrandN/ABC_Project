@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+
+<car1>
+    <is_second_hand></is_second_hand>
+    <is_for_sale></is_for_sale>
+    <price></price>
+    <description></description>
+    <known_problem></known_problem>
+    <color></color>
+    <gas></gas>
+    <seat_number></seat_number>
+    <option></option>
+
+    <speed>
+        <max_speed></max_speed>
+        <horses></horses>
+        <time_to_max_speed></time_to_max_speed>
+    </speed>
+
+    <brand></brand>
+    <car_reference></car_reference>
+</car1>
+
+<car2>
+    <is_second_hand></is_second_hand>
+    <is_for_sale></is_for_sale>
+    <price></price>
+    <description></description>
+    <known_problem></known_problem>
+    <color></color>
+    <gas></gas>
+    <seat_number></seat_number>
+    <option></option>
+
+    <speed>
+        <max_speed></max_speed>
+        <horses></horses>
+        <time_to_max_speed></time_to_max_speed>
+    </speed>
+
+    <brand></brand>
+    <car_reference></car_reference>
+</car2>
+
+<car3>
+    <is_second_hand></is_second_hand>
+    <is_for_sale></is_for_sale>
+    <price></price>
+    <description></description>
+    <known_problem></known_problem>
+    <color></color>
+    <gas></gas>
+    <seat_number></seat_number>
+    <option></option>
+
+    <speed>
+        <max_speed></max_speed>
+        <horses></horses>
+        <time_to_max_speed></time_to_max_speed>
+    </speed>
+
+    <brand></brand>
+    <car_reference></car_reference>
+</car3>

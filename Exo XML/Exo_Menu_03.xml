@@ -1,0 +1,19 @@
+<?xml version="1.0"?> 
+
+<side>
+    <name></name>
+    <price></price>
+    <description></description>
+</side>
+
+<mainmenu>
+    <name></name>
+    <price></price>
+    <description></description>
+</mainmenu>
+
+<dessert>
+    <name></name>
+    <price></price>
+    <description></description>
+</dessert>

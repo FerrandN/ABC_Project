@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+
+<receipt>
+
+    <introduction></introduction>
+
+    <utensil>
+        <price></price>
+        <name></name>
+        <photo></photo>
+    </utensil>
+
+    <ingredient>
+        <quantity></quantity>
+        <name></name>
+        <type></type>
+
+        <where_to_found>
+            <place></place>
+            <link></link>   
+            <country></country> 
+        </where_to_found>
+
+    </ingredient>
+
+    <time></time>
+    <difficulty></difficulty>
+    <type></type>
+    <calorie></calorie>
+    <step_number></step_number>
+
+    <step1></step1>
+    <step2></step2>
+    <step3></step3>
+    
+</receipt>

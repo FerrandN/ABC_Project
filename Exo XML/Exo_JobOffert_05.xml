@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+
+
+
+<phpParis>
+    <title></title>
+
+    <town></town>
+
+    <description>
+        <tasks></tasks>
+        <advantage></advantage>
+        <profil></profil>
+    </description>
+
+    <skills>
+        <first></first>
+        <second></second>
+        <third></third>
+        <fourth></fourth>
+        <fifth></fifth>
+    </skills>
+    
+    <startDate></startDate>
+    <salary></salary>
+    <mail></mail>
+</phpParis>
+
+<javaMulhouse>
+    <title></title>
+
+    <town></town>
+
+    <description>
+        <tasks></tasks>
+        <advantage></advantage>
+        <profil></profil>
+    </description>
+
+    <skills>
+        <first></first>
+        <second></second>
+        <third></third>
+        <fourth></fourth>
+        <fifth></fifth>
+    </skills>
+    
+    <startDate></startDate>
+    <salary></salary>
+    <mail></mail>
+</javaMulhouse>
+
+<nodeJS>
+    <title></title>
+
+    <town></town>
+
+    <description>
+        <tasks></tasks>
+        <advantage></advantage>
+        <profil></profil>
+    </description>
+
+    <skills>
+        <first></first>
+        <second></second>
+        <third></third>
+        <fourth></fourth>
+        <fifth></fifth>
+    </skills>
+    
+    <startDate></startDate>
+    <salary></salary>
+    <mail></mail>
+</nodeJS>

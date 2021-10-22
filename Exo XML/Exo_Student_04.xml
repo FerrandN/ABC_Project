@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+
+<class>
+
+<student1>
+
+    <course>
+        <formation></formation>
+        <term></term>
+        <startDate></startDate>
+        <endDate></endDate>
+    </course>
+
+    <firstName></firstName>
+    <lastName></lastName>
+    <birthDate></birthDate>
+    <mailAdress></mailAdress>
+</student1>
+
+<student2>
+
+    <course>
+        <formation></formation>
+        <term></term>
+        <startDate></startDate>
+        <endDate></endDate>
+    </course>
+
+    <firstName></firstName>
+    <lastName></lastName>
+    <birthDate></birthDate>
+    <mailAdress></mailAdress>
+</student2>
+
+<student3>
+
+    <course>
+        <formation></formation>
+        <term></term>
+        <startDate></startDate>
+        <endDate></endDate>
+    </course>
+
+    <firstName></firstName>
+    <lastName></lastName>
+    <birthDate></birthDate>
+    <mailAdress></mailAdress>
+</student3>
+
+</class>
