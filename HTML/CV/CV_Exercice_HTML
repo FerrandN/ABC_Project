@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>CV FERRAND Nicolas</title>
+        <link rel="stylesheet" href="CV_Exercice_CSS.css">
     </head>
 
     <body>
@@ -16,85 +17,122 @@
         </header>
         <main>
             <h1>Experience Professionnel</h1>
+
             <article>
                 <h2>Percepteur - Lyon IUT Feyssine</h2>
-                <p>2012 (2mois)</p>
-                <p>Récuperer l’argent de la location des terrain de tennis</p>
+                <p class="date_experience">2012 (2mois)</p>
+                <p>Récuperer l’argent de la location des terrains de tennis</p>
             </article>
             
             <article>
                 <h2>Agent de sécurité aéroportuaire - St hilaire de la côte, Seris</h2>
-                <p>2014 (6mois)</p>
+                <p class="date_experience">2014 (6mois)</p>
                 <p>Gerer la sécurité et les flux de passager</p>
             </article>
 
             <article>
                 <h2>Technicien hotline - Colombe, Cross ID / EDP</h2>
-                <p>2016 (8 mois)</p>
+                <p class="date_experience">2016 (8 mois)</p>
                 <p>Réception d’appel, Édition de ticket, Édition de base de donnée MYSQL</p>
             </article>
 
             <article>
                 <h2>Agent logistique - Satolas et Bonce, Geodis Amazon</h2>
-                <p>2017 (9 mois)</p>
+                <p class="date_experience">2017 (9 mois)</p>
                 <p>Récéption de marchandise, Traitement des anomalies, Logistique</p>
             </article>
 
             <article>
                 <h2>Stage de programmation C# avec Mr.Pinto</h2>
-                <p>2018 (1 mois)</p>
+                <p class="date_experience">2018 (1 mois)</p>
                 <p>Apprentissage des bases du C# et découverte du métier</p>
             </article>
 
             <article>
                 <h2>Préparateur de commande - Lidl</h2>
-                <p>2018 (3 Mois)</p>
+                <p class="date_experience">2018 (3 Mois)</p>
                 <p>Créé des palettes de produit correspondant à une commande</p>
             </article>
 
             <article>
                 <h2>Monteur PC - Topachat</h2>
-                <p>2018 (12 Mois)</p>
+                <p class="date_experience">2018 (12 Mois)</p>
                 <p>Assembler les pièces d’une tour, Câble management</p>
             </article>
 
             <article>
                 <h2>Technicien informatique - AFB</h2>
-                <p>2019 (20 Mois)</p>
+                <p class="date_experience">2019 (20 Mois)</p>
                 <p>Instalation OS Windows, Réparation Hardware, Correction d’erreur Software, Logistique, Récéption / Expédition colis</p>
             </article>
-            
+            <hr></hr>
             <h1>Diplôme</h1>
-            <p>Permit B
-                Bac Pro Production Graphique </br>
-                Certificats de qualifications professionnelles d’Agent de Sureté Aéroportuaire, Esima Lyon. </br>
-                Certificat de Qualité Professionnelle Agent de Prévention et de Sécurité, Centre de Prévention et de Formation Incendie La Frette </br>
-                Service de Sécurité Incendie et d’Assistance à Personne, Centre de Prévention et de Formation Incendie La Frette</p>
+        
+            <article class="diploma">
+                <p class="date_diploma">2010</p>
+                Permis B
+            </article>
+        </br>
+            <article class="diploma">
+                <p class="date_diploma">2012</p>
+                Bac Pro Production Graphique
+            </article>
+        </br>
+            <article class="diploma">
+                <p class="date_diploma">2013</p>
+                Certificats de qualifications professionnelles d’Agent de Sureté Aéroportuaire, Esima Lyon.
+            </article>
+        </br>
+            <article class="diploma">
+                <p class="date_diploma">2014</p>
+                Certificat de Qualité Professionnelle Agent de Prévention et de Sécurité, Centre de Prévention et de Formation Incendie La Frette
+            </article>
+        </br>
+            <article class="diploma">
+                <p class="date_diploma">2014</p>
+                Service de Sécurité Incendie et d’Assistance à Personne, Centre de Prévention et de Formation Incendie La Frette</article>
+            </article>
+
         </main>
+    
         <footer>
             <h1>Compétences</h1>
-            <p>Communication
+
+            <p>
+                Communication
                 Connaissance informatique 
                 programmation C#
                 (débutant)
-                Ponctuel</p>
+                Ponctuel
+            </p>
+
             <h1>Langues</h1>
+
             <p>Français: courant
-                Anglais: Bon</p>
+                Anglais: Bon
+            </p>
+
             <h1>Hobbies</h1>
-            <p>Dessin
+
+            <p>
+                Dessin </br>
                 Batterie / chant </br>
                 Marche à pied </br>
                 Montage vidéo </br>
-                Streaming</p>
+                Streaming
+            </p>
+
             <h1>Info. Perso.</h1>
-            <p>07 Impasse Jacquet </br>
+
+            <p>
+                07 Impasse Jacquet </br>
                 38600 Fontaine </br>
                 Téléphone: 0772433157 </br>
                 14/05/1992 </br>
                 Célibataire </br>
                 nicolas.ferrand38@gmail.com </br>
-                <a href="https://github.com/FerrandN">github</a></p>
+                <a href="https://github.com/FerrandN">github</a>
+            </p>
         </footer>
     </body>
 </html>

@@ -1,75 +1,76 @@
 <?xml version="1.0"?>
 
+<jobs>
 
+    <phpParis>
+        <title></title>
 
-<phpParis>
-    <title></title>
+        <town></town>
 
-    <town></town>
+        <description>
+            <tasks></tasks>
+            <advantage></advantage>
+            <profil></profil>
+        </description>
 
-    <description>
-        <tasks></tasks>
-        <advantage></advantage>
-        <profil></profil>
-    </description>
+        <skills>
+            <first></first>
+            <second></second>
+            <third></third>
+            <fourth></fourth>
+            <fifth></fifth>
+        </skills>
 
-    <skills>
-        <first></first>
-        <second></second>
-        <third></third>
-        <fourth></fourth>
-        <fifth></fifth>
-    </skills>
-    
-    <startDate></startDate>
-    <salary></salary>
-    <mail></mail>
-</phpParis>
+        <startDate></startDate>
+        <salary></salary>
+        <mail></mail>
+    </phpParis>
 
-<javaMulhouse>
-    <title></title>
+    <javaMulhouse>
+        <title></title>
 
-    <town></town>
+        <town></town>
 
-    <description>
-        <tasks></tasks>
-        <advantage></advantage>
-        <profil></profil>
-    </description>
+        <description>
+            <tasks></tasks>
+            <advantage></advantage>
+            <profil></profil>
+        </description>
 
-    <skills>
-        <first></first>
-        <second></second>
-        <third></third>
-        <fourth></fourth>
-        <fifth></fifth>
-    </skills>
-    
-    <startDate></startDate>
-    <salary></salary>
-    <mail></mail>
-</javaMulhouse>
+        <skills>
+            <first></first>
+            <second></second>
+            <third></third>
+            <fourth></fourth>
+            <fifth></fifth>
+        </skills>
 
-<nodeJS>
-    <title></title>
+        <startDate></startDate>
+        <salary></salary>
+        <mail></mail>
+    </javaMulhouse>
 
-    <town></town>
+    <nodeJS>
+        <title></title>
 
-    <description>
-        <tasks></tasks>
-        <advantage></advantage>
-        <profil></profil>
-    </description>
+        <town></town>
 
-    <skills>
-        <first></first>
-        <second></second>
-        <third></third>
-        <fourth></fourth>
-        <fifth></fifth>
-    </skills>
-    
-    <startDate></startDate>
-    <salary></salary>
-    <mail></mail>
-</nodeJS>
+        <description>
+            <tasks></tasks>
+            <advantage></advantage>
+            <profil></profil>
+        </description>
+
+        <skills>
+            <first></first>
+            <second></second>
+            <third></third>
+            <fourth></fourth>
+            <fifth></fifth>
+        </skills>
+
+        <startDate></startDate>
+        <salary></salary>
+        <mail></mail>
+    </nodeJS>
+</jobs>

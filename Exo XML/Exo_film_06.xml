@@ -1,34 +1,35 @@
-<?xml version="1.0"?> 
+<?xml version="1.0"?>
+<session>
+    <film1>
+        <day></day>
+        <hours></hours>
+        <duration></duration>
+        <type></type>
+        <seat_number></seat_number>
+        <name></name>
+        <room_number></room_number>
+        <pegi></pegi>
+    </film1>
 
-<film1>
-    <day></day>
-    <hours></hours>
-    <duration></duration>
-    <type></type>
-    <seat_number></seat_number>
-    <name></name>
-    <room_number></room_number>
-    <pegi></pegi>
-</film1>
+    <film2>
+        <day></day>
+        <hours></hours>
+        <duration></duration>
+        <type></type>
+        <seat_number></seat_number>
+        <name></name>
+        <room_number></room_number>
+        <pegi></pegi>
+    </film2>
 
-<film2>
-    <day></day>
-    <hours></hours>
-    <duration></duration>
-    <type></type>
-    <seat_number></seat_number>
-    <name></name>
-    <room_number></room_number>
-    <pegi></pegi>
-</film2>
-
-<film3>
-    <day></day>
-    <hours></hours>
-    <duration></duration>
-    <type></type>
-    <seat_number></seat_number>
-    <name></name>
-    <room_number></room_number>
-    <pegi></pegi>
-</film3>
+    <film3>
+        <day></day>
+        <hours></hours>
+        <duration></duration>
+        <type></type>
+        <seat_number></seat_number>
+        <name></name>
+        <room_number></room_number>
+        <pegi></pegi>
+    </film3>
+</session>
