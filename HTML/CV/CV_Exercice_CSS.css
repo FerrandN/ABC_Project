@@ -1,61 +1,83 @@
 * {font-family:'Calibri', 'Trebuchet MS', sans-serif, 'Gill Sans', 'Gill Sans MT';}
 
-header{
-    background-color: #438ae7;
-    text-shadow: rgba(0, 0, 0, 0.5) 3px 3px;
-    text-indent : 3%;
-    width: 2000px;
-    height: 150px;
-    margin:auto;
-    box-shadow: inset 2px 2px 1px 1px rgba(0, 0, 0, 0.37),4px 4px 3px 3px black;
-    color: white;
-    padding:1%;
+body > header, main, body > footer {
+    width: 1320px;
+    max-width: 100%;
+    margin: auto;
 }
 
-header h1{
-    margin-top: 32px;
+header{
+    background-color: #438ae7;
+    text-shadow: rgba(0, 0, 0, 0.75) 4px 4px;
+    box-shadow: inset 5px 5px 3px 3px rgba(0, 0, 0, 0.13),4px 4px 3px 3px rgba(0, 0, 0, 0.50);
+    color: white;
+    padding:1%;
+    font-size: 30px;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+header img{
+    margin-right:20px;
+}
+header h1 {
+    margin: 0 0 20px 0;
 }
 
 header h2{
-    margin-top: -15px;
+    font-weight: normal;
+    margin: 0;
+}
+
+main > article {
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
 }
 
 main h1{
     text-indent : 12%;
+    width: 100%;
 }
 main h2{
-    text-indent : 15%;
+    text-indent : 5%;
     font-style: italic;
 }
 
 main p{
-    text-indent : 15%;
+    text-indent : 5%;
     font-style: italic;
-    margin-top: -20px;
+}
+
+article header {
+    flex-basis: 130px;
+
+}
+
+article section {
+    width: 100%;
+
 }
 
 main .date_experience{
-    position: absolute;
-    width: 175px;
-    height: 150px;
-    background-color: rgb(166, 169, 172);
-    text-indent : 2%;
     font-style: normal;
     font-size: x-large;
-    margin-top: -50px;
-    text-align: center;
+    text-align:center;
+    background-color: rgba(166, 169, 172,1);
 }
 
 main .date_diploma{
-    position: absolute;
-    text-align: center;
     text-indent : 2%;
     font-size: 24px;
-    margin-top: -5px;
-    padding-left: 0px;
-    width: 175px;
-    height: 150px;
     background-color: rgb(166, 169, 172);
+    display:flex;
+    flex-flow: row nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 main .diploma{
@@ -63,8 +85,36 @@ main .diploma{
     font-style: italic;
 }
 
+
+.diploma {
+    display:flex;
+    flex-flow: row nowrap;
+    flex-direction: row;
+}
+
+
 hr {
     color: rgb(166, 169, 172);
-    width: 4px;
-    margin: auto;
+    background-color: rgb(166, 169, 172);
+}
+
+footer{
+    background-color: #438ae7;
+    text-align:center;
+    color: white;
+    font-weight:bold;
+
+}
+
+footer h1{
+    background-color:white;
+    color: black;
+    font-variant : small-caps;
+    box-shadow: 5px 5px 3px 3px rgba(0, 0, 0, 0.13),4px 4px 3px 3px rgba(0, 0, 0, 0.50);
+}
+
+footer h2{
+    text-shadow: rgba(0, 0, 0, 0.75) 4px 4px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
 }
