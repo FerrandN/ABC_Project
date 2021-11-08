@@ -3,7 +3,7 @@
 body > header, main, body > footer {
     width: 1320px;
     max-width: 100%;
-    margin: auto;
+    margin:auto;
 }
 
 header{
@@ -35,53 +35,36 @@ main > article {
     display:flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: stretch;
+    align-items: center;
+    white-space: nowrap;
+    gap:50px;
+    font-style: italic;
 }
 
 main h1{
-    text-indent : 12%;
+    text-indent : 10%;
     width: 100%;
-}
-main h2{
-    text-indent : 5%;
-    font-style: italic;
-}
-
-main p{
-    text-indent : 5%;
-    font-style: italic;
-}
-
-article header {
-    flex-basis: 130px;
-
-}
-
-article section {
-    width: 100%;
-
-}
-
-main .date_experience{
     font-style: normal;
-    font-size: x-large;
-    text-align:center;
-    background-color: rgba(166, 169, 172,1);
 }
 
-main .date_diploma{
-    text-indent : 2%;
-    font-size: 24px;
-    background-color: rgb(166, 169, 172);
-    display:flex;
-    flex-flow: row nowrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+
+.date_experience{
+    background-color: rgb(205, 205, 206);
+    padding: 23px;
+    width:85px;
+    text-align: center;
+    font-style: normal;
+}
+
+.date_diploma{
+    background-color: rgb(205, 205, 206);
+    width: 108px;
+    padding:10px;
+    font-style: normal;
+    text-align:center
 }
 
 main .diploma{
-    text-indent : 15%;
     font-style: italic;
 }
 
@@ -90,30 +73,34 @@ main .diploma{
     display:flex;
     flex-flow: row nowrap;
     flex-direction: row;
+    margin: auto;
 }
 
 
 hr {
-    color: rgb(166, 169, 172);
-    background-color: rgb(166, 169, 172);
+    color: rgb(205, 205, 206);
+    background-color: rgb(205, 205, 206);
 }
 
-footer{
+.personal_data{
+    display:flex;
+    flex-direction:column;
     background-color: #438ae7;
     text-align:center;
     color: white;
     font-weight:bold;
-
+    align-items: center;
 }
 
-footer h1{
+.personal_data h1{
     background-color:white;
+    width: 300px;
     color: black;
     font-variant : small-caps;
     box-shadow: 5px 5px 3px 3px rgba(0, 0, 0, 0.13),4px 4px 3px 3px rgba(0, 0, 0, 0.50);
 }
 
-footer h2{
+.personal_data h2{
     text-shadow: rgba(0, 0, 0, 0.75) 4px 4px;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgb(0, 0, 0);
