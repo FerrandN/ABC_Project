@@ -13,9 +13,14 @@ public class Calculrayon {
 		
 		rayon = sc.nextInt();
 		
-		result = 4*Math.PI*Math.pow(rayon, 4);
+		result = 4*Math.PI*Math.pow(rayon, 2);
+		System.out.println("l'air du cercle est de:"+result);
 		
-		System.out.println(result);
+		
+		result = 4/3*Math.PI*Math.pow(rayon, 3);
+		System.out.println("l'air du cercle est de:"+result);
+		
+		sc.close();
 		
 	}
 
