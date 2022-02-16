@@ -26,28 +26,33 @@ public class triDesNombres {
 				//fill array with user value
 			}
 
-			while (isParsed = false)
+			while (!isParsed)
 			{
 
 				for (int i = 0; i < arrayAnswer.length; i++)
 				{
-					int isSmallest = arrayAnswer[i];
-					//take array index value and stock
-
 					for (int index = i+1; index < arrayAnswer.length; index++)
 					{
+						int isSmallest = arrayAnswer[i];
+						//take array index value and stock
+						
 						//check if number is the smallest
 						if (isSmallest > arrayAnswer[index])
 						{
 							int swap = arrayAnswer[index];
 							arrayAnswer[index] = isSmallest;
 							arrayAnswer[i] = swap;
-							index--;
+							index = i--;
 						}
 					}
 				}
+				isParsed = true;
 			}
 
+			for (int i = 0; i < arrayAnswer.length; i++)
+			{
+				System.out.println(arrayAnswer[i]);
+			}
 			sc.close();
 		}
 	}

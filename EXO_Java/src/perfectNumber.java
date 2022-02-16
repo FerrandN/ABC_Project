@@ -4,45 +4,62 @@ public class perfectNumber {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int userEntry;
-		int[] perfectNumber;
-		int[] divisor;
+
 		int sum;
-		int perfectNumberFound=0;
-
 		int result;
-		boolean numberFound = false;
 
+
+		boolean retry = true;
 		//l'utilisateur rentre un chiffre, qui donne le nombre de valeur à afficher
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Please enter the number of perfect number you want");
-		userEntry = sc.nextInt();
 
-		//Boucle qui répète le calcul tant que la valeur de l'utilisateur n'est pas atteinte
 
-		while (perfectNumberFound < userEntry)
+
+		//Calcul du nombre parfait
+		while (retry)
 		{
-			//boucle qui calcul si un nombre est parfait
-
-			int index = 1;
+			int limitation = 0;
+			int userInput;
+			int perfectNumber = 2;
 			
-			while (numberFound == false)
+			System.out.println("Please enter the number of perfect number you want");
+			userInput = sc.nextInt();
+			sc.nextLine();
+			
+			while (limitation < userInput)
 			{
-				
-					for (int i = 1; i < index; i++)
+				sum = 0;
+				for (int i = 1; i < perfectNumber; i++)
+				{
+					result = perfectNumber%i;
+					if (result == 0)
 					{
-	
-						result = index%i;
-	
-						if (result == 0)
-						{
-	
-						}
-	
+						sum = sum+i;
 					}
-
+				}
+				if (sum == perfectNumber)
+				{
+					System.out.println(perfectNumber+" is a perfect number !");
+					limitation++;
+				}
+				perfectNumber++;
 			}
+/*
+			System.out.println("Do you want to retry? y/n ");
+			userCharInput = sc.next().charAt(0);
+			
+			if (userCharInput != 'y')
+			{
+				retry = false;
+			}
+*/
+			System.out.println("Do you want to retry? y/n ");
+			String s = sc.nextLine();
+			if (s.charAt(0) != 'y') {
+				
+			}
+			
 		}
-
+		sc.close();
 	}
 }
