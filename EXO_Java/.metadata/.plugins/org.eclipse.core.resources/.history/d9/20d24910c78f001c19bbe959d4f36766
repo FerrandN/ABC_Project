@@ -1,0 +1,60 @@
+package Package;
+import java.util.Scanner;
+import java.util.Random;
+
+public class zeroOneTwo 
+{
+
+	public static void main(String[] args) 
+	{
+		boolean retry=true;
+		
+		while (retry)
+		{
+			int userCount = 0;
+			int computerCount = 0;
+			int userInput;
+			int computerInput;
+			int result;
+			
+			Scanner sc = new Scanner(System.in);
+			
+			while (userCount<10 || computerCount<10)
+			{
+				//initiate value from both player
+				Random numberGenerate = new Random();
+				computerInput = numberGenerate.nextInt(3);
+				userInput = sc.nextInt();
+				
+				//compare both value to know who win
+				result = userInput - computerInput;
+				if (result < 0) //in that case computerInput is higher than userInput
+				{
+					result = computerInput = userInput;
+					if (result == 1)
+					{
+						computerCount++;
+						System.out.println("Opponent scored a point!");
+					}
+					else
+					{
+						userCount++;
+						System.out.println("Well done ! you scored!");
+					}
+				}
+				else if (result > 0)
+				{
+					
+				}
+				//if players choose same value
+				else
+				{
+					System.out.println("Both player choose the same number. No point given this turn.");
+				}
+				
+			}
+			sc.close();
+		}
+	}
+
+}

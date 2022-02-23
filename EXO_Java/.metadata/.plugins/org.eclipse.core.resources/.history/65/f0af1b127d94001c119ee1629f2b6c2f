@@ -1,0 +1,21 @@
+package partThird;
+import java.util.Scanner;
+public class leJeuDuPendu 
+{
+
+	public static void main(String[] args) 
+	{
+		String userInput;
+		boolean wordIsValid = true;
+		
+		Scanner sc = new Scanner(System.in);
+		
+		while (wordIsValid)
+		{
+			System.out.println("Please enter a word, players have to guess");
+			userInput = sc.nextLine();
+		}
+		
+	}
+
+}

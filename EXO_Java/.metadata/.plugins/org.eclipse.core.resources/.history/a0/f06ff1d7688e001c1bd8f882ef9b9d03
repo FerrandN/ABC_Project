@@ -1,0 +1,64 @@
+package Package;
+import java.util.Scanner;
+public class kmToMilesPart3 {
+
+	public static void main(String[] args) 
+	{
+		String userInput = null;
+		String[] inputToParse;
+		double valueToConvert;
+		int numberCount = 0;
+		boolean userRepeatInput = true;
+		Scanner sc = new Scanner(System.in);
+		
+		inputToParse = new String[100];
+		
+		while (userRepeatInput)
+		{
+			System.out.println("Please enter the value you want to convert seperated by a space");
+			//user answer the question
+			userInput = sc.next();
+			
+			//Check if user wants to input something
+			if (userInput.equals("go"))
+			{
+				userRepeatInput = false;
+			}
+			//If not we fill the array
+			else
+			{
+				inputToParse[numberCount] = userInput;
+				numberCount++;
+			}
+			
+		}
+		sc.close();
+		
+		// check for each array[value] what's inside and convert
+		for (int i = 0 ; i < numberCount; i++)
+		{
+			String value = inputToParse[i];
+			
+		convert(value);
+		}
+		
+		public static void convert(String value)
+		{
+			String[] measureUnitValue = value.split(" ");
+			string measure;
+			
+			if (measureUnitValue.length>1)
+			{
+				measure = measureUnitValue[1];
+			}
+			else
+			{
+				measure = "km";
+			}
+			
+		}
+		
+
+	}
+
+}

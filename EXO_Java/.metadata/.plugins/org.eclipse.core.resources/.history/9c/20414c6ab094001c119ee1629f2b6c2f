@@ -1,0 +1,12 @@
+package partThird;
+
+public class dichotomie 
+{
+
+	public static void main(String[] args) 
+	{
+		String[] name = new String[7];
+		
+	}
+
+}

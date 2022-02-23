@@ -1,0 +1,26 @@
+package partThird;
+import java.util.Scanner;
+
+public class Palindrome 
+{
+
+	public static void main(String[] args) 
+	{
+		boolean isPalindrome = true;
+		boolean emptyInput = true;
+		
+		String userInput;
+		
+		Scanner sc = new Scanner(System.in);
+		
+		while (emptyInput);
+		{
+			System.out.print("Please, enter a sentence that you think is a palindrome");
+			userInput = sc.nextLine();
+		}
+		
+		
+		sc.close();
+	}
+
+}

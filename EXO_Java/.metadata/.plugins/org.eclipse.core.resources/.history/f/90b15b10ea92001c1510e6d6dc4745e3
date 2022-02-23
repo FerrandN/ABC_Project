@@ -1,0 +1,42 @@
+package partThird;
+import java.util.Scanner;
+
+public class lookForLetter {
+
+	public static void main(String[] args) 
+	{
+		String userInput;
+		char input[];
+		char letterToCount;
+
+		int letterCount;
+		boolean end = false;
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Please enter your sentence");
+		userInput = sc.nextLine();
+
+		input = userInput.toCharArray();
+		letterToCount = sc.next().charAt(0);
+
+		if (input.length <= 1)
+		{
+			if (input[0].equals(".") )
+			{
+				
+			}
+		}
+		while (!end);
+		{
+			for (int i = 0; i < input.length ; i++)
+			{
+				
+
+			}
+		}
+
+		sc.close();
+
+	}
+
+}

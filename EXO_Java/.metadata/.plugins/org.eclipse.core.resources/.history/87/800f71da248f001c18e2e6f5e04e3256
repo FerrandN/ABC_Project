@@ -1,0 +1,51 @@
+package Package;
+import java.util.Scanner;
+public class degreeToFarhenheitAllValue 
+{
+
+	public static void main(String[] args) 
+	{
+		String measureUnit;
+		int maxValue;
+		int minValue;
+		int result;
+
+		boolean userQuit = false;
+		while (!userQuit)
+		{
+			Scanner sc = new Scanner(System.in);
+
+			System.out.println("Enter C to convert Celsius to farhenheit, else enter F to convert farhenheit to Celsius");
+			measureUnit = sc.nextLine();
+
+			System.out.println("Enter min value");
+			minValue = sc.nextInt();
+
+			System.out.println("Enter max value");
+			maxValue = sc.nextInt();
+			
+			if (measureUnit == "quit")
+			{
+				userQuit = true;
+			}
+			else if (measureUnit == "C")
+			{
+				for (int i = minValue; i < maxValue; i++)
+				{
+					result = (i-32)*(5/9);
+					System.out.println(result);
+				}
+			}
+			else
+			{
+				for (int i = minValue; i < maxValue; i++)
+				{
+				result = (i*(9/5))+32;
+				System.out.println(result);
+				}
+			}
+
+			sc.close();
+		}
+	}
+}

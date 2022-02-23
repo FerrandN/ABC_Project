@@ -1,0 +1,46 @@
+package Package;
+import java.util.Scanner;
+public class forkGame 
+{
+
+	public static void main(String[] args)
+	{
+		int min = 0;
+		int max = 100;
+		int randomNumber = Math.random()*(max - min);
+		String userInput;
+		int userInputValue;
+		
+		int userMin=0;
+		int userMax=100;
+		
+		boolean numberFound = false;
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Try to guess the selected number between"+min+" "+max+":)");
+		
+		while (!numberFound)
+		{
+		userInput = sc.nextLine();
+		userInputValue = Integer.valueOf(userInput);
+		
+		if (userInputValue == randomNumber)
+		{
+			System.out.println("Well done!");
+			numberFound = true;
+		}
+		else if (userInputValue < randomNumber)
+		{
+			userMin = userInputValue;
+			System.out.println(userMin+" is too low!");
+		}
+		else
+		{
+			userMax = userInputValue;
+			System.out.println(userMax+" is too high");
+		}
+		
+		}
+		sc.close();
+	}
+}

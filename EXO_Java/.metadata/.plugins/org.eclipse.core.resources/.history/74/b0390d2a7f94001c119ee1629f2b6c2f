@@ -1,0 +1,27 @@
+package partThird;
+import java.util.Scanner;
+public class leJeuDuPendu 
+{
+
+	public static void main(String[] args) 
+	{
+		String userInput;
+		boolean wordIsValid = false;
+		
+		Scanner sc = new Scanner(System.in);
+		
+		while (!wordIsValid)
+		{
+			System.out.println("Please enter a word, players have to guess");
+			userInput = sc.nextLine();
+			
+			if (userInput.length() > 5)
+			{
+				wordIsValid = true;
+				System.out.println("Word must have 5 letter at least");
+			}
+		}
+		
+	}
+
+}

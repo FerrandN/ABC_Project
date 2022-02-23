@@ -1,0 +1,53 @@
+import java.util.Scanner;
+public class nombrePremier {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int askedNumber;
+		double squareRoot;
+		boolean hasRemainder;
+		boolean isEven = false;
+		double toCompare;
+		
+		System.out.println("Please enter a number");
+		Scanner sc = new Scanner(System.in);
+		
+		askedNumber = sc.nextInt();
+		squareRoot = java.lang.Math.sqrt(askedNumber);
+		System.out.println("SquareRoot of asked number is:"+squareRoot);
+		
+		if (askedNumber % 2 == 0) {
+			if (askerNumber != 2) {
+				
+			}
+		}
+		
+		while (isEven == false)
+		{
+			
+		
+			for (int i = 3; i < squareRoot; i++ ) 
+			{
+				if ( squareRoot % 2 == 0 )
+				{
+					System.out.println("your number isn't prime number");
+					isEven = true;
+				}
+				
+				else
+				{
+				toCompare = squareRoot%i;
+				
+				
+				
+				}
+				
+			
+			}
+		}
+		
+		sc.close();
+	}
+
+}

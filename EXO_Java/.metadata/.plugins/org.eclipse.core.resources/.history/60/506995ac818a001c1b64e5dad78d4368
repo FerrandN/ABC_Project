@@ -1,0 +1,85 @@
+import java.util.Scanner;
+public class triDesNombres {
+
+	public static void main(String[] args) 
+	{
+		String userAnswer;
+		String[] convertedValue;
+		int[] arrayAnswer;
+
+		Scanner sc = new Scanner(System.in);
+
+
+		System.out.println("What're the number you want to parse (please separate each by a space)");
+
+
+		userAnswer = sc.nextLine();
+		convertedValue = userAnswer.split(" ");
+
+		arrayAnswer = new int[convertedValue.length];
+
+		for (int i = 0;  i < convertedValue.length ; i++)
+		{
+			arrayAnswer[i] = Integer.valueOf(convertedValue[i]);
+			//fill array with user value
+		}
+		
+		for (int i = 0; i < arrayAnswer.length; i++)
+		{
+			int isSmallest = arrayAnswer[i];
+			//take array index value and stock
+
+			for (int index = i+1; index < arrayAnswer.length; index++)
+			{
+				//check if number is the smallest
+				if (isSmallest > arrayAnswer[index])
+				{
+					int swap = arrayAnswer[index];
+					arrayAnswer[index] = isSmallest;
+					arrayAnswer[i] = swap;
+					index--;
+				}
+			}
+		}
+/*
+	}
+	
+	trierTableau(arrayAnswer);
+	
+	public static int[] trierTableau(int[] tab) {
+		boolean finded;
+		int tmp;
+		int i = 0, j;
+		
+		//declaration de variable
+		
+		while (i < tab.length) {
+			j= i + 1;
+			finded = false;
+			while (j < tab.length && !finded) {
+				if (tab[j]<tab[i]) {
+					tmp = tab[i];
+					tab[i] = tab[j];
+					tab[j] = tmp;
+					finded = true;
+				}
+				j++;
+			}
+			if (!finded) {
+				i++;
+			}
+		}
+		
+		//tant que i est inferieur à la longueur du tableau
+		//éffectue j=i+1
+		//affecte false à finded
+		//tant que j est inferieur à la longueur de tab et finded est false
+		//si la valeur du tableau à l'index j est inferieur à l'index du tableau i
+		//change les valeurs d'index dans le tableau et passe finded en true
+		//incrémentation j
+		//si finded est false incrémentation i
+		 
+		 
+		return tab;*/
+	}
+}

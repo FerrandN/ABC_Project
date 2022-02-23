@@ -1,0 +1,33 @@
+package Package;
+import java.util.Scanner;
+public class exPartTwo
+{
+
+	public static void main(String[] args) 
+	{
+		double userInput;
+		boolean inputWasValid = true;
+		double kmToMilesValue = 1.609;
+		
+		double convertedValue;
+
+		System.out.println("Please enter a value between 0.01 and 1 000 000");
+		while (inputWasValid)
+		{
+			Scanner sc = new Scanner(System.in);
+			userInput = sc.nextDouble();
+			
+			if (userInput < 0.01 || userInput > 1000000)
+			{
+				System.out.println("Please enter a value between 0.01 and 1 000 000");
+			}
+			else
+			{
+				inputWasValid = false;
+			}
+			convertedValue = userInput/kmToMilesValue;
+		}
+
+	}
+
+}

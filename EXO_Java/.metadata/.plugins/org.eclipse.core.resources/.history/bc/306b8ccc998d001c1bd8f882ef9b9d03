@@ -1,0 +1,21 @@
+package Package;
+import java.util.Scanner;
+public class Convert_KM_Miles 
+{
+
+	public static void main(String[] args)
+	{
+		String userInput;
+		int userValue;
+		String[] userInputArray;
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Veuillez rentrer une valeur et une unitée de mesure séparé par un éspace");
+		userInput = sc.nextLine();
+		
+		userInputArray = userInput.split(" ");
+		
+
+	}
+
+}

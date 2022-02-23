@@ -1,0 +1,12 @@
+package partThird;
+import java.util.Scanner;
+public class lettersFromAlphabet
+{
+
+	public static void main(String[] args)
+	{
+		String userInput;
+		
+	}
+
+}

@@ -1,0 +1,30 @@
+package Package;
+import java.util.Scanner;
+
+public class bicyclette {
+
+	public static void main(String[] args) 
+	{
+		boolean sunny = true;
+		boolean bicycletteIsBroken = true;
+		boolean fastRepair = true;
+		
+		if (sunny)
+		{
+			if (bicycletteIsBroken)
+			{
+				
+			}
+			else
+			{
+				
+			}
+		}
+		
+		else
+		{
+			
+		}
+	}
+
+}

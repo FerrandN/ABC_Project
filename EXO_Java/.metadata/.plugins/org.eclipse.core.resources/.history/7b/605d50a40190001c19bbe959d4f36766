@@ -1,0 +1,85 @@
+package Package;
+import java.util.Scanner;
+
+public class bicyclette {
+
+	public static void main(String[] args) 
+	{
+		boolean sunny = true;
+		boolean bicycletteIsBroken = true;
+		boolean fastRepair = true;
+		boolean bookFound = true;
+		boolean bookIsInStore = true;
+
+		String monLivre;
+		String userAnswer;
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Est-ce qu'il fait beau ?");
+		userAnswer = sc.nextLine();
+		
+		if (sunny) //si il fait beau
+		{
+			if (bicycletteIsBroken) //si la bicyclette est cassé
+			{
+				if (fastRepair) //si la réparation est rapide
+				{
+
+				}
+				else // si la réparation est longue
+				{
+
+				}
+			}
+			else // si la bicyclette est en état de marche
+			{
+
+			}
+		}
+
+		else // si il fait mauvais temps
+		{
+			if (bookFound) // le livre est dans la bibliothèque du salon
+			{
+
+			}
+			else // le livre n'est pas trouvé
+			{
+				if (bookIsInStore) //le livre est dans la librairie
+				{
+
+				}
+				else // le livre n'est pas dans la librairie
+				{
+
+				}
+			}
+			System.out.println("je m'installe dans le fauteuil avec "+monLivre);
+		}
+		sc.close();
+	}
+	public static void userInputIsValid(String userAnswer) 
+	{
+		boolean answerInvalid = true;
+		while (answerInvalid)
+		{
+			if (!userAnswer.equals("yes") || !userAnswer.equals("no"))
+			{
+				System.out.println("Please enter a valid answer");
+			}
+			else
+			{
+				answerInvalid = false;
+			}
+		}
+	}
+	public static void userInputIsNo(String userAnswer, boolean no)
+	{
+		userInputIsValid(userAnswer);
+		if (userAnswer.equals("no"))
+		{
+			no = false;
+		}
+	}
+}

@@ -1,0 +1,20 @@
+package partThird;
+import java.util.Scanner;
+import java.util.Random;
+
+public class arrayParse 
+{
+
+	public static void main(String[] args) 
+	{
+		int[] arrayToParse;
+		
+		arrayToParse = new int[10];
+		
+		for (int i = 0; i < arrayToParse.length; i++)
+		{
+			
+		}
+	}
+
+}

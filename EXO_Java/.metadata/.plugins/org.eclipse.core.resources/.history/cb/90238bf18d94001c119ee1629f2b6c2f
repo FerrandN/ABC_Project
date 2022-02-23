@@ -1,0 +1,80 @@
+package partThird;
+import java.util.Scanner;
+public class leJeuDuPendu 
+{
+
+	public static void main(String[] args) 
+	{
+		String userInput;
+		boolean wordIsValid = false;
+		boolean wordIsGuessed = false;
+
+		Scanner sc = new Scanner(System.in);
+
+
+		do
+		{
+			System.out.println("Please enter a word, players have to guess");
+			userInput = sc.nextLine();
+
+			if (userInput.length() < 5)
+			{	
+				System.out.println("Word must have 5 letters at least");
+			}
+
+			else 
+			{
+				wordIsValid=true;
+			}
+		} while (!wordIsValid);
+
+		String wordToGuess = hideWord(userInput);
+		 // afficher le mot caché / 2ème joueur devine
+
+		
+			//tableau de char avec chacune des lettres du mot
+		char tabChar[]= wordToGuess.toCharArray();
+		while (!wordIsGuessed)
+		{
+		//on affiche le mot
+		for( char el :tabChar) {
+			
+			System.out.print ( el+ " ");
+			
+			char playerGuess;
+			playerGuess = sc.next().charAt(0);
+			
+			for (int i = 0; i < wordToGuess.length(); i++)
+			{
+				if (playerGuess == userInput.charAt(i))
+				{
+					tabChar[i] = playerGuess;
+					System.out.println("You guessed");
+				}
+			}
+			
+			for (int i = 0; i < wordToGuess.length(); i++)
+			{
+				for (int j = 0; i < wordToGuess.length(); j++)
+				{
+					
+				}
+			}
+		}
+		
+
+			
+		}
+	}
+
+	public static String hideWord (String _wordToGuess)
+	{
+		for (int i = 1; i < (_wordToGuess.length()-1); i++)
+		{
+			_wordToGuess = _wordToGuess.replace(_wordToGuess.charAt(i), '-');
+		}
+
+		return _wordToGuess;
+	}
+
+}

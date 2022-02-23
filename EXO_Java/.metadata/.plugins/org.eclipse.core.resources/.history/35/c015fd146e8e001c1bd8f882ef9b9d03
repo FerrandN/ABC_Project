@@ -1,0 +1,70 @@
+package Package;
+import java.util.Scanner;
+public class kmToMilesPart3 {
+
+	public static void main(String[] args) 
+	{
+		String userInput;
+		String[] inputToParse;
+		int numberCount = 0;
+		boolean userRepeatInput = true;
+		
+		
+		Scanner sc = new Scanner(System.in);
+
+		inputToParse = new String[100];
+
+		while (userRepeatInput)
+		{
+			System.out.println("Please enter the value you want to convert seperated by a space");
+			//user answer the question
+			userInput = sc.next();
+
+			//Check if user wants to input something
+			if (userInput.equals("go"))
+			{
+				userRepeatInput = false;
+			}
+			//If not we fill the array
+			else
+			{
+				inputToParse[numberCount] = userInput;
+				numberCount++;
+			}
+		}
+		// check for each array[value] what's inside and convert
+		for (int i = 0 ; i < numberCount; i++)
+		{
+			String value = inputToParse[i];
+			convert(value);
+		}
+		
+		sc.close();
+	}
+	public static void convert(String value)
+	{
+		String[] measureUnitValue = value.split(" ");
+		String measure = "km";
+		double userValue;
+
+		if (measureUnitValue.length>1)
+		{
+			measure = measureUnitValue[1];
+		}
+
+		userValue = Double.parseDouble(measure);
+
+		if (measure.equals("km"))
+		{
+			userValue = userValue/1.609;
+			System.out.println(value+ " km"+" = "+userValue +" mi");
+		}
+
+		else
+		{
+			userValue = userValue*1.609;
+			System.out.println(value+ " mi"+" = "+userValue +" km");
+		}
+
+	}
+}

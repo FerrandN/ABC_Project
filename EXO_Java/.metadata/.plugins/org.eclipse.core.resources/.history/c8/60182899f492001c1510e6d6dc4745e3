@@ -1,0 +1,17 @@
+package partThird;
+import java.util.Scanner;
+public class lettersFromAlphabet
+{
+
+	public static void main(String[] args)
+	{
+		String userInput;
+		char[] allCharacters;
+		char[] alphabet;
+		int letterCount;
+		
+		Scanner sc = new Scanner(System.in);
+		alphabet = new char[24];
+	}
+
+}

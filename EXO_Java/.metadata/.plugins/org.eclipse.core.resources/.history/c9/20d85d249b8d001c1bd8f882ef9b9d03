@@ -1,0 +1,38 @@
+package Package;
+import java.util.Scanner;
+public class Convert_KM_Miles 
+{
+	public static void main(String[] args)
+	{
+
+		boolean wrongInput = true;
+
+		while (wrongInput = true)
+			{
+			String userInput;
+			int userValue;
+			String[] userInputArray;
+
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Veuillez rentrer une valeur et une unitée de mesure séparé par un éspace");
+			userInput = sc.nextLine();
+
+			userInputArray = userInput.split(" ");
+			
+			if (userInputArray[1] != "km" && userInputArray[1] != "miles")
+			{
+				System.out.println("Merci d'entrée un nombre suivis d'une unitée de mesure");
+			}
+			else
+			{
+				if (userInputArray[1] == "km")
+				{
+					userValue = userInputArray[0]/1.609;
+				}
+			}
+			
+			sc.close();
+			
+			}
+	}
+}

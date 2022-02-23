@@ -1,0 +1,10 @@
+package Package;
+import java.utils.Scanner;
+public class degreeFahrenheit {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

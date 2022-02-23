@@ -1,0 +1,63 @@
+import java.util.Scanner;
+public class perfectNumber {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+
+		int sum;
+		int result;
+
+
+		boolean retry = true;
+		char userCharInput;
+		//l'utilisateur rentre un chiffre, qui donne le nombre de valeur à afficher
+		Scanner sc = new Scanner(System.in);
+
+
+
+		//Calcul du nombre parfait
+		while (retry)
+		{
+			int limitation = 0;
+			int userInput;
+			int perfectNumber = 2;
+			
+			System.out.println("Please enter the number of perfect number you want");
+			userInput = sc.nextInt();
+			sc.nextLine();
+			
+			while (limitation < userInput)
+			{
+				sum = 0;
+				for (int i = 1; i < perfectNumber; i++)
+				{
+					result = perfectNumber%i;
+					if (result == 0)
+					{
+						sum = sum+i;
+					}
+				}
+				if (sum == perfectNumber)
+				{
+					System.out.println(perfectNumber+" is a perfect number !");
+					limitation++;
+				}
+				perfectNumber++;
+			}
+/*
+			System.out.println("Do you want to retry? y/n ");
+			userCharInput = sc.next().charAt(0);
+			
+			if (userCharInput != 'y')
+			{
+				retry = false;
+			}
+*/
+			System.out.println("Do you want to retry? y/n ");
+			userCharInput = sc.nextLine();
+			
+		}
+		sc.close();
+	}
+}

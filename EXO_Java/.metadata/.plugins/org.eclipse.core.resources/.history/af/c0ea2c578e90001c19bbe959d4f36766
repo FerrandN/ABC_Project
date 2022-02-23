@@ -1,0 +1,12 @@
+package Package;
+
+public class youngAndOld 
+{
+
+	public static void main(String[] args) 
+	{
+		int oldCount=0;
+		int youngCount=0;
+	}
+
+}

@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class perfectNumber {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int userInput;
+		int sum;
+		int result;
+		int limitation = 0;
+		int perfectNumber = 2;
+		
+
+		//l'utilisateur rentre un chiffre, qui donne le nombre de valeur à afficher
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Please enter the number of perfect number you want");
+		userInput = sc.nextInt();
+
+		//Calcul du nombre parfait
+		
+		while (limitation < userInput);
+		{
+			for (int i = 2; i < perfectNumber; i++)
+			{
+				sum = 0;
+				result = perfectNumber%i;
+				if (result == 0)
+				{
+					sum = sum+i;
+				}
+				System.out.println(perfectNumber+" is a perfect number !");
+			}
+		}
+		
+	}
+}

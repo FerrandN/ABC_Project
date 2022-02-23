@@ -1,0 +1,11 @@
+package partThird;
+import java.utils.Scanner;
+public class leJeuDuPendu 
+{
+
+	public static void main(String[] args) 
+	{
+		
+	}
+
+}

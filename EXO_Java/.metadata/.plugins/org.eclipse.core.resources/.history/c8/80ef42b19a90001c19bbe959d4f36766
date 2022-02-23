@@ -1,0 +1,26 @@
+package Package;
+import java.util.Scanner;
+
+public class displayPeopleAge 
+{
+
+	public static void main(String[] args) 
+	{
+		int youngCount = 0;
+		int peopleAge[];
+		
+		peopleAge = new int[20];
+		
+		Scanner sc = new Scanner(System.in);
+		
+		for (int i = 0; i < peopleAge.length; i++)
+		{
+			String userInput;
+			System.out.println("How old is the "+i+" person");
+			userInput = sc.nextLine();
+			
+			peopleAge[i] = Integer.valueof(userInput);
+		}
+	}
+
+}

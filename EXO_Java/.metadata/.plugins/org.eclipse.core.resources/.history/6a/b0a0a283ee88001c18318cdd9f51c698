@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class compteCalcul {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int bankAccountValue;
+		int interest;
+		int yearsOfPlacement;
+		
+		int result;
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Please enter the bank account value");
+		bankAccountValue = sc.nextInt();
+		
+		System.out.println("Please enter the bank account value");
+		interest = sc.nextInt();
+		
+		System.out.println("Please enter the bank account value");
+		yearsOfPlacement = sc.nextInt();
+		
+		System.out.println("simple interest");
+		result = bankAccountValue*interest*yearsOfPlacement;
+		System.out.println("Here is your simple interest:"+result);
+		
+		
+		System.out.println("Composed interest");
+		result
+		System.out.println("Here is your composed interest:"+result);
+		
+	}
+
+}

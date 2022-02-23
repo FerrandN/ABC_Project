@@ -1,0 +1,11 @@
+package partThird;
+import java.util.Scanner;
+
+public class arrayParse {
+
+	public static void main(String[] args) 
+	{
+
+	}
+
+}

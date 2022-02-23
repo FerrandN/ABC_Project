@@ -1,0 +1,64 @@
+import java.util.Scanner;
+public class nombrePremier 
+{
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+
+		int askedNumber;
+		double squareRoot;
+		boolean isValidNumber = false;
+		boolean isPrimeNumber = false;
+		double toCompare;
+		
+		System.out.println("Please enter a number");
+		Scanner sc = new Scanner(System.in);
+		
+		askedNumber = sc.nextInt();
+		squareRoot = java.lang.Math.sqrt(askedNumber);
+		System.out.println("SquareRoot of asked number is:"+squareRoot);
+		
+		while (isValidNumber == false);
+		{
+				if (askedNumber <= 1) 
+				{
+				isValidNumber = true;
+				System.out.println("your number isn't valid, please enter a number superior to 1");
+				}
+				//check if askedNumber is divisible
+				
+				else if (askedNumber % 2 == 0) 
+				
+				{
+					if (askedNumber != 2) 
+					{
+						isValidNumber = true;
+						System.out.println("your number isn't prime number");
+						// check if askednumber is egal to 2
+					}
+						// if not > verify if askedNumber is prime number 
+				}
+				
+				else 
+				{
+						int i = 3;
+						while (i< squareRoot && !isPrimeNumber) 
+						{
+							toCompare = squareRoot%i;
+							
+							if (toCompare == 0);
+							{
+								System.out.println(askedNumber+"isn't prime number.");
+								isPrimeNumber = false;
+							}
+							
+							i++;
+							
+						}
+				}
+							
+			}
+		sc.close();
+		}
+}

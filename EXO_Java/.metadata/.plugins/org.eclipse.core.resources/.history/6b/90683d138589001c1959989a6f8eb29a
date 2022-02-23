@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class nombrePremier {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int askedNumber;
+		double squareRoot;
+		boolean hasRemainder;
+		boolean iseven;
+		double toCompare;
+		
+		System.out.println("Please enter a number");
+		Scanner sc = new Scanner(System.in);
+		
+		askedNumber = sc.nextInt();
+		
+		
+		
+		
+		sc.close();;
+	}
+
+}

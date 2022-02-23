@@ -1,0 +1,34 @@
+import java.util.Scanner;
+public class nombrePremier {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int askedNumber;
+		double squareRoot;
+		boolean hasRemainder;
+		boolean isEven;
+		double toCompare;
+		
+		System.out.println("Please enter a number");
+		Scanner sc = new Scanner(System.in);
+		
+		askedNumber = sc.nextInt();
+		squareRoot = java.lang.Math.sqrt(askedNumber);
+		System.out.println("SquareRoot of asked number is:"+squareRoot);
+		
+		
+		
+		for (int i = 1; i < squareRoot; i++ ) 
+		{
+			if ( i % 2 == 0 )
+			isEven = true;
+			
+			toCompare = squareRoot%i;
+			
+		}
+		
+		sc.close();
+	}
+
+}

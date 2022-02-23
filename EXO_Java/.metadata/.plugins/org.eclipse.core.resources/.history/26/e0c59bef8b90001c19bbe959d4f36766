@@ -1,0 +1,103 @@
+package Package;
+import java.util.Scanner;
+
+public class bicyclette {
+
+	public static void main(String[] args) 
+	{
+		boolean sunny = true;
+		boolean bicycletteIsBroken = true;
+		boolean fastRepair = true;
+		boolean bookFound = true;
+		boolean bookIsInStore = true;
+
+		String monLivre = "Le premier volume de game Of Throne";
+		String userAnswer;
+
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Est-ce qu'il fait beau ?");
+		userAnswer = sc.nextLine();
+		userInputIsNo(userAnswer, sunny, sc);
+		if (sunny) //si il fait beau
+		{
+			System.out.println("Est-ce que la bicyclette est cassé ?");
+			userAnswer = sc.nextLine();
+			userInputIsNo(userAnswer, bicycletteIsBroken, sc);
+			if (bicycletteIsBroken) //si la bicyclette est cassé
+			{
+				System.out.println("Vous allez chez le garagiste"+"\nEst-ce que la réparation est rapide? ?");
+				userAnswer = sc.nextLine();
+				userInputIsNo(userAnswer, fastRepair, sc);
+				if (fastRepair) //si la réparation est rapide
+				{
+					System.out.println("Vous êtes partis vous balader en vélo");
+				}
+				else // si la réparation est longue
+				{
+					System.out.println("Vous êtes partis cueillir des joncs pres de l'étang");
+				}
+			}
+			else // si la bicyclette est en état de marche
+			{
+				System.out.println("Vous êtes partis vous balader en vélo");
+			}
+		}
+
+		else // si il fait mauvais temps
+		{			
+		System.out.println("Comme il pleut, vous voulez livre un livre et vous mettez à chercher le premier volume de game of throne"+"\n le livre est-il dans votre bibliothèque?");
+		userAnswer = sc.nextLine();
+		userInputIsNo(userAnswer, bookFound, sc);
+			if (bookFound) // le livre est dans la bibliothèque du salon
+			{
+				System.out.println("Vous passer un bon moment à lire dans votre fauteuil");
+			}
+			else // le livre n'est pas trouvé
+			{
+				System.out.println("Vous décider d'aller à la bibliothèque pour trouver ce livre"+"\nL'avez-vous trouver?");
+				userAnswer = sc.nextLine();
+				userInputIsNo(userAnswer, bookIsInStore, sc);
+				if (bookIsInStore) //le livre est dans la librairie
+				{
+					System.out.println("Vous emprunter le livre au bibliothècaire et rentrer chez vous");
+				}
+				else // le livre n'est pas dans la librairie
+				{
+					System.out.println("Vous emprunter un roman policier et rentrer chez vous");
+					monLivre = "Un roman policier";
+				}
+			}
+			System.out.println("Vous vous installer dans le fauteuil pour lire "+monLivre);
+		}
+		sc.close();
+	}
+	public static void userInputIsValid(String userAnswer, Scanner sc) 
+	{
+		boolean answerInvalid = true;
+		while (answerInvalid)
+		{
+			if (!userAnswer.equals("yes") || !userAnswer.equals("no"))
+			{
+				System.out.println("Please enter a valid answer");
+				userAnswer = sc.nextLine();
+			}
+			else
+			{
+				answerInvalid = false;
+			}
+		}
+	}
+	public static void userInputIsNo(String userAnswer, boolean no, Scanner sc)
+	{
+		userInputIsValid(userAnswer, sc);
+		if (userAnswer.equals("no"))
+		{
+			no = false;
+		}
+		else
+		{
+			no = true;
+		}
+	}
+}

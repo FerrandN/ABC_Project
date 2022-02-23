@@ -1,0 +1,71 @@
+package partThird;
+import java.util.Scanner;
+public class lettersFromAlphabet
+{
+
+	public static void main(String[] args)
+	{
+		String userInput;
+		char[] allCharacters;
+		char[] alphabet;
+
+		Scanner sc = new Scanner(System.in);
+		//Initalisation du tableau alphabet
+		alphabet = new char[26];
+		fillArray(alphabet);
+
+		//initialisation du tableau contenant la saisie de l'utilisateur puis conversion en char
+		System.out.println("Type a long sentence please");
+		userInput = sc.nextLine();
+		allCharacters = userInput.toCharArray();
+
+		//Comptage des lettres
+		int indice;
+		for (int i = 0; i < alphabet.length; i++)
+		{
+			int letterCount = 0;
+			for (indice = 0; indice < allCharacters.length; indice++)
+			{
+				if (alphabet[i] == allCharacters[indice])
+				{
+					letterCount++;
+				}
+			}
+			System.out.println("There's "+letterCount+" time the letter"+alphabet[i]+"in the sentence");
+		}
+		
+		
+		sc.close();
+	}
+
+	public static void fillArray(char[] alphabet)
+	{
+		alphabet[0] = 'a';
+		alphabet[1] = 'b';
+		alphabet[2] = 'c';
+		alphabet[3] = 'd';
+		alphabet[4] = 'e';
+		alphabet[5] = 'f';
+		alphabet[6] = 'g';
+		alphabet[7] = 'h';
+		alphabet[8] = 'i';
+		alphabet[9] = 'j';
+		alphabet[10] = 'k';
+		alphabet[11] = 'l';
+		alphabet[12] = 'm';
+		alphabet[13] = 'n';
+		alphabet[14] = 'o';
+		alphabet[15] = 'p';
+		alphabet[16] = 'q';
+		alphabet[17] = 'r';
+		alphabet[18] = 's';
+		alphabet[19] = 't';
+		alphabet[20] = 'u';
+		alphabet[21] = 'v';
+		alphabet[22] = 'w';
+		alphabet[23] = 'x';
+		alphabet[24] = 'y';
+		alphabet[25] = 'z';
+	}
+
+}

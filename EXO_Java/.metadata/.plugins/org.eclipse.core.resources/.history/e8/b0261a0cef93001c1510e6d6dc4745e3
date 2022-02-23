@@ -1,0 +1,36 @@
+package partThird;
+import java.util.Scanner;
+import java.util.Random;
+
+public class arrayParse 
+{
+
+	public static void main(String[] args) 
+	{
+		int[] arrayToParse;
+		
+		arrayToParse = new int[10];
+		
+		// remplir un tableau de int
+		for (int i = 0; i < arrayToParse.length; i++)
+		{
+			Random rand = new Random();
+			arrayToParse[i] = rand.nextInt(10 - 1);
+		}
+	
+	
+	for (int i = 0; i< arrayToParse.length; i++)
+	{
+		for (int j = 0; j < arrayToParse.length; j++)
+		{
+			if (arrayToParse[i]>arrayToParse[j])
+			{
+				int temp = arrayToParse[i];
+				arrayToParse[i]=arrayToParse[j];
+				arrayToParse[j] = temp;
+			}
+		}
+	}
+
+	}
+}

@@ -1,0 +1,25 @@
+package Package;
+import java.util.Scanner;
+public class kmToMilesPart3
+{
+
+	public static void main(String[] args) 
+	{
+		String userInput;
+		String[] userInputArray;
+		boolean userQuit = false;
+		boolean userGo = false;
+		int userCount = 0;
+		
+		Scanner sc = new Scanner(System.in);
+		
+		while (!userQuit)
+		{
+		//on créé un tableau de 100 cases de mémoire pour y stocker les valeurs que va entrer l'utilisateur
+		userInputArray = new String[100];
+		System.out.println("Please enter value to convert");
+		userInput = sc.nextLine();
+		}
+		
+	}
+}

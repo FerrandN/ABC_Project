@@ -1,0 +1,54 @@
+package partThird;
+import java.util.Scanner;
+
+public class Palindrome 
+{
+
+	public static void main(String[] args) 
+	{
+		boolean isPalindrome = true;
+		boolean emptyInput = true;
+
+		String userInput;
+
+		Scanner sc = new Scanner(System.in);
+
+		while (emptyInput);
+		{
+			System.out.print("Please, enter a sentence that you think is a palindrome");
+			userInput = sc.nextLine();
+			
+			if (userInput.length() > 0)
+			{
+				emptyInput = false;
+			}
+			else
+			{
+				System.out.println("no sentence detected. Please retry");
+			}
+		}
+
+		while (isPalindrome)
+		{
+			for (int i = 0 ; i < userInput.length() ; i++)
+			{
+				for (int indice = userInput.length(); indice > 0 ; indice++)
+				{
+					if (userInput.charAt(i) != userInput.charAt(indice))
+					{
+						isPalindrome = false;
+						System.out.println("Sentence is not a palindrome");
+					}
+				}
+			}
+		}
+		
+		if (isPalindrome == true)
+		{
+			System.out.println("Sentence is a palindrome, weldone !");
+		}
+		
+		sc.close();
+	}
+
+}

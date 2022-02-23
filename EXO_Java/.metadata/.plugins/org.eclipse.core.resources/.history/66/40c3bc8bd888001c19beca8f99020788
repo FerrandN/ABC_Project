@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Calculerangle {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int rayon;
+		int angle;
+		int result;
+		
+		System.out.println("Veuillez rentrer le rayon du cercle");
+		
+		
+	}
+
+}
