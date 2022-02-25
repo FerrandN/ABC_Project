@@ -7,7 +7,7 @@ public class lookForLetter {
 	{
 		String userInput;
 		char input[];
-		char letterToCount;
+		char letterToCount = 'a';
 
 		int letterCount = 0;
 		boolean end = false;
@@ -16,9 +16,7 @@ public class lookForLetter {
 		System.out.println("Please enter your sentence");
 		userInput = sc.nextLine();
 
-		System.out.println("please enter the letter you want to check");
 		input = userInput.toCharArray();
-		letterToCount = sc.next().charAt(0);
 
 		if (input.length == 0)
 		{
@@ -36,24 +34,34 @@ public class lookForLetter {
 				}
 			}
 		}
+		else if (input.length < 120)
+		{
+			System.out.println("sentence must have more than 120 letters");
+			end = true;
+		}
+
 
 		if (!end)
 		{
-			for (int i = 0; i < input.length ; i++)
+			for (letterToCount = 'a'; letterToCount <= 'z'; letterToCount++)
 			{
-				if (letterToCount == input[i])
+				letterCount = 0;
+				for (int i = 0; i < input.length ; i++)
 				{
-					letterCount++;
+					if (letterToCount == input[i])
+					{
+						letterCount++;
+					}
 				}
-			}
 
-			if (letterCount == 0)
-			{
-				System.out.println("Letter not found");
-			}
-			else
-			{
-				System.out.println(letterToCount +" is present " +letterCount +" times");
+				if (letterCount == 0)
+				{
+					System.out.println(letterToCount+" Not found");
+				}
+				else
+				{
+					System.out.println(letterToCount +" is present " +letterCount +" times");
+				}
 			}
 		}
 		sc.close();

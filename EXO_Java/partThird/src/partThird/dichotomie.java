@@ -1,5 +1,5 @@
 package partThird;
-
+import java.util.Scanner;
 public class dichotomie 
 {
 
@@ -13,20 +13,73 @@ public class dichotomie
 		name[4] = "nicolas";
 		name[5] = "stefany";
 		name[6] = "jose";
-		name[7] = "julian";
+
+		arrayParse(name);
+
+		Scanner sc = new Scanner(System.in);
+		String userInput;
+		System.out.println("Which name do you want to Check");
+		userInput = sc.nextLine();
+
+		boolean wordFound = false;
 		
-		//tri du tableau par ordre alphabétique
-		for (int i = 0; i < name.length;i++)
+		if (userInput.compareTo(name[name.length/2]) < 0)
 		{
-			for (int j= 0; j < name.length; j++)
+			for (int i = 0; i<name.length/2;i++)
 			{
-				if ()
+				if (userInput.compareTo(name[i]) == 0)
 				{
-					
+					System.out.println("Word was found on case "+name[i]);
+					wordFound = true;
 				}
 			}
 		}
+		else if ((userInput.compareTo(name[name.length/2]) > 0))
+		{
+			for (int i = name.length/2; i<name.length;i++)
+			{
+				if (userInput.compareTo(name[i]) == 0)
+				{
+					System.out.println("Word was found on case "+name[i]);
+					wordFound = true;
+				}
+			}
+		}
+		else if (userInput.compareTo(name[name.length/2]) == 0)
+		{
+			System.out.println("word found in case "+name[name.length/2]);
+			wordFound = true;
+		}
 		
+		if (wordFound == false)
+		{
+			System.out.println("word not found");
+		}
+		sc.close();
 	}
 
+
+public static String[] arrayParse(String[] arrayToParse)
+{
+	//tri du tableau par ordre alphabétique
+	for (int i = 0; i < arrayToParse.length;i++)
+	{
+
+		for (int j= 0; j < arrayToParse.length; j++)
+		{
+			if (arrayToParse[i].compareTo(arrayToParse[j]) < 0)
+			{
+				String temp = arrayToParse[j];
+				arrayToParse[j] = arrayToParse[i];
+				arrayToParse[i] = temp;
+			}
+		}
+	}
+
+	for (int i = 0; i < arrayToParse.length; i++)
+		System.out.println(arrayToParse[i]);
+
+	return arrayToParse;
 }
+}
+

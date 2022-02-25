@@ -1,0 +1,35 @@
+package partThird;
+import java.util.Scanner;
+
+public class PGCD 
+{
+
+	public static void main(String[] args) 
+	{
+		int firstNumber;
+		int secondNumber;
+		
+		int result = 0;
+		Scanner sc = new Scanner(System.in);
+		
+		firstNumber = sc.nextInt();
+		secondNumber = sc.nextInt();
+		
+		while (firstNumber != secondNumber)
+		{
+			if (firstNumber > secondNumber)
+			{
+				
+			}
+			else if (firstNumber < secondNumber)
+			{
+				
+			}
+			else
+			result = firstNumber;
+		}
+
+		System.out.println(result);
+	}
+
+}

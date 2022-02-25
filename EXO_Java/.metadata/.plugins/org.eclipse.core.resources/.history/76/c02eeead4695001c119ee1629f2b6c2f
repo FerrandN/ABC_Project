@@ -1,0 +1,44 @@
+package partThird;
+
+public class dichotomie 
+{
+
+	public static void main(String[] args) 
+	{
+		String[] name = new String[7];
+		name[0] = "rodolphe";
+		name[1] = "claire";
+		name[2] = "yassine";
+		name[3] = "gerard";
+		name[4] = "nicolas";
+		name[5] = "stefany";
+		name[6] = "jose";
+		
+		arrayParse(name);
+		
+	}
+	
+	public static String[] arrayParse(String[] arrayToParse)
+	{
+		//tri du tableau par ordre alphabétique
+		for (int i = 0; i < arrayToParse.length;i++)
+		{
+			
+			for (int j= 0; j < arrayToParse.length; j++)
+			{
+				if (arrayToParse[i].compareTo(arrayToParse[j]) < 0)
+				{
+					String temp = arrayToParse[j];
+					arrayToParse[j] = arrayToParse[i];
+					arrayToParse[i] = temp;
+				}
+			}
+		}
+		
+		for (int i = 0; i < arrayToParse.length; i++)
+			System.out.println(arrayToParse[i]);
+		
+		return arrayToParse;
+	}
+	
+}
