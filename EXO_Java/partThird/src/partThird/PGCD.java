@@ -28,5 +28,7 @@ public class PGCD
 		}
 
 		System.out.println(firstNumber);
+		sc.close();
 	}
+
 }
